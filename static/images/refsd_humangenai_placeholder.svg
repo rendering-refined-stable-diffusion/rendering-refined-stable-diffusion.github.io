@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f3f6fb"/>
+  <rect x="70" y="70" width="1460" height="760" rx="24" fill="#fcfdff" stroke="#cdd8ea" stroke-width="4"/>
+  <rect x="140" y="180" width="560" height="460" rx="20" fill="#e8eef8"/>
+  <rect x="900" y="180" width="560" height="460" rx="20" fill="#e8eef8"/>
+  <text x="420" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#3f5575">Generated Attribute Fidelity</text>
+  <text x="420" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Prompt complexity</text>
+  <text x="420" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Facial attribute fidelity</text>
+  <text x="420" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Fine-grained translation</text>
+  <text x="420" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Full-body attributes</text>
+  <text x="1180" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#3f5575">Generic Property Assurance</text>
+  <text x="1180" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Privacy assessment</text>
+  <text x="1180" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Pose preservation</text>
+  <text x="1180" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#5c6f8a">Human satisfaction</text>
+  <text x="800" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" fill="#536886">ADD HumanGenAI figure here</text>
+</svg>

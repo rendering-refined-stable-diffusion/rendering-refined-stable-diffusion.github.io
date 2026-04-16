@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f1f3f8"/>
+  <rect x="70" y="70" width="1460" height="760" rx="24" fill="#fcfdff" stroke="#c8d0e0" stroke-width="4"/>
+  <rect x="150" y="170" width="1300" height="90" rx="14" fill="#dce3f0"/>
+  <rect x="150" y="300" width="1300" height="90" rx="14" fill="#e9eef7"/>
+  <rect x="150" y="430" width="1300" height="90" rx="14" fill="#dce3f0"/>
+  <rect x="150" y="560" width="1300" height="90" rx="14" fill="#e9eef7"/>
+  <text x="800" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="#46546f">ADD qualitative or benchmark figures here</text>
+</svg>

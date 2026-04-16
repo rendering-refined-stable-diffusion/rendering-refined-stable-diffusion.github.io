@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#eef4f1"/>
+  <rect x="70" y="70" width="1460" height="760" rx="24" fill="#fbfffd" stroke="#bfd4c9" stroke-width="4"/>
+  <rect x="140" y="220" width="300" height="210" rx="18" fill="#d9ebe2"/>
+  <rect x="650" y="220" width="300" height="210" rx="18" fill="#d9ebe2"/>
+  <rect x="1160" y="220" width="300" height="210" rx="18" fill="#d9ebe2"/>
+  <path d="M470 325 H620" stroke="#5b7f71" stroke-width="10" stroke-linecap="round"/>
+  <path d="M980 325 H1130" stroke="#5b7f71" stroke-width="10" stroke-linecap="round"/>
+  <polygon points="620,325 590,305 590,345" fill="#5b7f71"/>
+  <polygon points="1130,325 1100,305 1100,345" fill="#5b7f71"/>
+  <text x="290" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#315446">Stage 1</text>
+  <text x="800" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#315446">Stage 2</text>
+  <text x="1310" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#315446">Stage 3</text>
+  <text x="800" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" fill="#315446">ADD method overview figure here</text>
+</svg>

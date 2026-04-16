@@ -1,0 +1,168 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: #fcfbf7;
+  color: #1f2430;
+}
+
+.paper-hero {
+  background:
+    radial-gradient(circle at top left, rgba(212, 186, 143, 0.35), transparent 34%),
+    linear-gradient(180deg, #fffaf0 0%, #fcfbf7 100%);
+}
+
+.publication-title,
+.publication-authors,
+.hero-subtitle,
+.eyebrow {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title {
+  letter-spacing: -0.04em;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  max-width: 900px;
+  margin: 0.75rem auto 1.25rem;
+  color: #655846;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  color: #8e6f42;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.author-block {
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+.publication-affiliations {
+  font-size: 1rem;
+  color: #6d6a63;
+  margin-top: 0.35rem;
+}
+
+.publication-affiliations .author-block {
+  line-height: 1.6;
+}
+
+.author-notes {
+  margin: 0.9rem auto 0;
+  max-width: 860px;
+  color: #6f6559;
+  font-size: 0.96rem;
+}
+
+.link-block a {
+  margin: 0.35rem 0.2rem;
+}
+
+.teaser-section .hero-body {
+  padding-top: 0;
+}
+
+.teaser-image,
+.feature-image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1px solid #e2d8c9;
+  background: white;
+}
+
+.teaser-caption {
+  margin-top: 1rem;
+  text-align: center;
+  color: #5f6270;
+  font-size: 1.02rem;
+}
+
+.feature-image-medium {
+  max-width: 640px;
+}
+
+.paper-card {
+  background: #fffefa;
+  border: 1px solid #e8e0d4;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 14px 40px rgba(35, 29, 22, 0.06);
+}
+
+.paper-card-section {
+  padding-top: 1rem;
+}
+
+.highlights-list {
+  margin-left: 1.25rem;
+}
+
+.stage-grid,
+.framework-grid,
+.metric-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stage-grid,
+.metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.framework-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.stage-card,
+.framework-card,
+.metric-card {
+  background: #fffdfa;
+  border: 1px solid #e5ddd1;
+  border-radius: 16px;
+  padding: 1.2rem;
+  text-align: left;
+  height: 100%;
+}
+
+.mini-list {
+  margin-left: 1.1rem;
+}
+
+.results-placeholder {
+  border: 2px dashed #b9b4a9;
+  border-radius: 16px;
+  padding: 2rem;
+  background: #fffdfa;
+  text-align: center;
+  color: #5e5b55;
+  margin-top: 1.5rem;
+}
+
+.footer .content {
+  color: #5b6170;
+}
+
+@media screen and (max-width: 768px) {
+  .paper-card {
+    padding: 1.3rem;
+  }
+
+  .publication-title {
+    font-size: 2.15rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+}

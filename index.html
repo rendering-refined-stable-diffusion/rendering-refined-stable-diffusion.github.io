@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="RefSD project page for the IEEE FG 2026 paper on privacy-compliant human data synthesis in images for GDPR.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="RefSD: Privacy-Compliant Human Data Synthesis in Images for GDPR">
+  <meta property="og:description" content="Rendering Refined Stable Diffusion for privacy-compliant human pseudonymization with HumanGenAI evaluation.">
+  <!-- ADD: Replace with the final hosted project-page URL. -->
+  <meta property="og:url" content="https://kartikp7.github.io/refsd_project_page/">
+  <meta property="og:image" content="static/images/refsd_teaser_placeholder.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:title" content="RefSD: Privacy-Compliant Human Data Synthesis in Images for GDPR">
+  <meta name="twitter:description" content="Rendering Refined Stable Diffusion for privacy-compliant human pseudonymization with HumanGenAI evaluation.">
+  <meta name="twitter:image" content="static/images/refsd_teaser_placeholder.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="keywords" content="RefSD, HumanGenAI, GDPR, privacy, pseudonymization, diffusion, IEEE FG 2026">
+
+  <title>RefSD: Privacy-Compliant Human Data Synthesis in Images for GDPR</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero paper-hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <p class="eyebrow">IEEE FG 2026</p>
+          <h1 class="title is-1 publication-title">Privacy-Compliant Human Data Synthesis in Images for GDPR</h1>
+          <p class="subtitle is-4 hero-subtitle">with Rendering Refined Stable Diffusion (RefSD)</p>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Kartik Patwari<sup>*&dagger;1</sup>,</span>
+            <span class="author-block">David Schneider<sup>*&dagger;,2</sup>,</span>
+            <span class="author-block">Xiaoxiao Sun<sup>3</sup>,</span>
+            <span class="author-block">Chen-Nee Chuah<sup>1</sup>,</span>
+            <span class="author-block">Lingjuan Lyu<sup>4</sup>,</span>
+            <span class="author-block">Vivek Sharma<sup>*4</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors publication-affiliations">
+            <span class="author-block">
+              <sup>1</sup>University of California, Davis
+              &nbsp;&nbsp;&nbsp;
+              <sup>2</sup>Karlsruhe Institute of Technology
+              <br>
+              <sup>3</sup>Australian National University
+              &nbsp;&nbsp;&nbsp;
+              <sup>4</sup>Sony AI, Sony Research
+            </span>
+          </div>
+
+          <p class="author-notes">
+            <sup>*</sup>Equal Contribution.
+            <sup>&dagger;</sup>Partial work done during internship at Sony AI.
+          </p>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <!-- ADD: Replace href with the final PDF URL or hosted paper URL. -->
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <!-- ADD: Replace href with the final GitHub/code URL. -->
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2412.06248" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <!-- ADD: Replace href with the Hugging Face demo URL. -->
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-rocket"></i></span>
+                  <span>Demo</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teaser-section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="images/refsd_higlight.jpg" alt="RefSD teaser figure" class="teaser-image">
+      <p class="teaser-caption">
+        RefSD pseudonymizes humans in commercially reusable public datasets by fully removing the original person,
+        inserting a pose-aligned identity-free 3D avatar, and refining that avatar with text-guided diffusion.
+        The result preserves scene layout and posture while pushing privacy closer to full masking and keeping
+        the image useful for downstream learning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Privacy regulations (e.g., GDPR, CCPA) mandate that
+            <em>public datasets with permissive commercial licenses</em> (e.g., CC BY 4.0)
+            containing humans be pseudononymized before use. However, existing anonymization methods have notable limitations:
+            blurring or masking degrade downstream utility, GAN-based synthesis offers limited control and photorealism, and
+            diffusion editors may retain identity traces. To overcome these limitations, we propose <strong>Rendering Refined Stable
+            Diffusion (RefSD)</strong>, a three-stage pipeline that (1) removes real humans via segmentation and inpainting,
+            (2) reconstructs pose-aligned, identity-free avatars through SMPL-based 3D rendering, and (3) refines appearance
+            with text-guided diffusion for photorealism. By using rendering, RefSD provides explicit control over body shape,
+            clothing and pose, enabling diverse yet structured avatar generation. To validate human alignment, we introduce
+            <strong>HumanGenAI</strong>, a human-annotation suite for evaluating privacy preservation, perceptual satisfaction,
+            and attribute-generation fidelity. Beyond HumanGenAI, we conduct re-identification and downstream task benchmarks,
+            demonstrating that RefSD matches the re-ID performance of complete masking while achieving competitive utility relative
+            to real images. Together, RefSD and HumanGenAI establish a scalable pipeline and benchmark for privacy-compliant human
+            synthesis in image datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-quarters">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-left">
+          <ul class="highlights-list">
+            <li>RefSD is a three-stage, training-free pseudonymization pipeline that sanitizes the scene, inserts a pose-aligned synthetic avatar, and refines it with diffusion for photorealism.</li>
+            <li>The rendering stage gives explicit control over pose, body shape, clothing, and attribute diversity while avoiding reuse of source-human textures or identity cues.</li>
+            <li>HumanGenAI provides a unified benchmark for privacy, pose preservation, perceptual satisfaction, prompt controllability, and fine-grained attribute fidelity.</li>
+            <li>RefSD reaches re-ID privacy nearly identical to full masking, outperforms prior methods in human evaluation, and improves downstream classification and detection when used as synthetic training data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper-card-section" id="refsd-pipeline">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths paper-card">
+        <h2 class="title is-3">RefSD Pipeline</h2>
+        <img src="images/refsd_pipeline.jpg" alt="RefSD pipeline figure" class="feature-image">
+        <div class="content has-text-justified">
+          <p>
+            RefSD is designed as a privacy-first full-body pseudonymization pipeline that replaces humans with
+            pose-aligned synthetic counterparts rather than editing the original subject in place. The paper frames this
+            as a privacy-utility bridge: the original human is completely removed, posture is preserved through 3D body
+            estimation, and diffusion is used only after a synthetic avatar has already been inserted into the scene.
+          </p>
+          <p>
+            This separation between structure and appearance matters. Rendering gives RefSD explicit geometric control,
+            while text-guided diffusion improves realism and attribute controllability without copying source identity.
+            The resulting images stay closer to the original scene layout than pure masking, while avoiding the identity
+            leakage risks of direct image editing.
+          </p>
+        </div>
+
+        <div class="stage-grid">
+          <div class="stage-card">
+            <h3 class="title is-5">1. Pose Estimation &amp; Sanitization</h3>
+            <p>
+              Detect the person, recover 3D body parameters, then fully remove the original human with segmentation
+              and inpainting so no identifiable traces remain in the background.
+            </p>
+          </div>
+          <div class="stage-card">
+            <h3 class="title is-5">2. Rendering-Based Synthesis</h3>
+            <p>
+              Build a pose-aligned SMPL avatar, sample from a diverse bank of base bodies and textures, and composite
+              that identity-free avatar back into the sanitized scene.
+            </p>
+          </div>
+          <div class="stage-card">
+            <h3 class="title is-5">3. Diffusion-Based Refinement</h3>
+            <p>
+              Use Canny edges from the rendered avatar plus text prompts for demographics, clothing, and context to
+              refine the synthetic person into a more photorealistic yet still privacy-compliant human.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths paper-card">
+        <h2 class="title is-3">HumanGenAI Evaluation Framework</h2>
+        <img src="images/HumanGenAI.png" alt="HumanGenAI evaluation framework figure" class="feature-image feature-image-medium">
+        <div class="content has-text-justified">
+          <p>
+            HumanGenAI is introduced to benchmark whether pseudonymized humans are not only private, but also aligned
+            with human expectations for realism, posture, and controllable attribute generation. The framework combines
+            structured human evaluation with downstream task analysis so privacy, quality, and utility are judged together
+            instead of in isolation.
+          </p>
+        </div>
+
+        <div class="framework-grid">
+          <div class="framework-card">
+            <h3 class="title is-5">Generated Attribute Fidelity (&phi;)</h3>
+            <p>Tests how well RefSD follows prompts and preserves attribute intent.</p>
+            <ul class="mini-list">
+              <li><strong>&phi;A:</strong> Prompt complexity across simple, medium, and complex prompts.</li>
+              <li><strong>&phi;B:</strong> Facial attribute fidelity over 50 single-attribute face prompts.</li>
+              <li><strong>&phi;C:</strong> Fine-grained attribute translation for close pairs such as ethnicity, age, emotion, and skin tone.</li>
+              <li><strong>&phi;D:</strong> Full-body attribute representation across 100 subcategories including clothing and occupation.</li>
+            </ul>
+          </div>
+          <div class="framework-card">
+            <h3 class="title is-5">Generic Property Assurance (&psi;)</h3>
+            <p>Measures whether pseudonymized images remain private, aligned, and visually acceptable.</p>
+            <ul class="mini-list">
+              <li><strong>&psi;A:</strong> Privacy assessment of how distinguishable the synthesized human is from the original.</li>
+              <li><strong>&psi;B:</strong> Pose preservation using human side-by-side comparisons.</li>
+              <li><strong>&psi;C:</strong> Human satisfaction for realism, quality, and preference.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            RefSD pairs strong privacy with usable synthetic data. In the paper’s human evaluation, RefSD scores highest
+            across privacy, pose preservation, and perceptual satisfaction, and in the re-identification benchmark it
+            nearly matches the privacy of completely masking the person.
+          </p>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <h3 class="title is-5">Human Evaluation</h3>
+            <p>
+              RefSD achieves <strong>4.5 / 4.6</strong> privacy, <strong>4.4 / 4.2</strong> pose, and
+              <strong>4.3 / 4.4</strong> satisfaction on face / full-body HumanGenAI &psi; evaluations,
+              outperforming SG-GAN, TriA-GAN, and Mask-SD.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 class="title is-5">Privacy via Re-ID</h3>
+            <p>
+              On Market1501, RefSD reaches <strong>R@1 = 27.5</strong> and <strong>mAP = 23.9</strong>,
+              essentially matching the privacy gold standard of MaskOut (<strong>27.4</strong>, <strong>23.8</strong>)
+              while remaining more visually useful than pure masking.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 class="title is-5">Utility for Training</h3>
+            <p>
+              RefSD synthetic data improves RAF-DB classification and OpenImages detection. The paper reports up to
+              <strong>+11.1%</strong> gender classification gain over real-only training, plus
+              <strong>+1.1 mAP@[.5:.95]</strong> and <strong>+1.0 mAP@0.5</strong> for detection over real-only data.
+            </p>
+          </div>
+        </div>
+
+        <div class="results-placeholder">
+          <p><strong>ADD:</strong> Insert your quantitative figure, table screenshots, or HTML tables here.</p>
+          <p>Good candidates are Table II, Table III, Table IV, or a custom summary panel of the privacy and utility numbers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Qualitatively, the paper positions RefSD as a better trade-off than both masked inpainting and prior full-body
+            anonymization baselines: it keeps posture and scene alignment stronger than masking-only methods, and it looks
+            more natural than raw rendering while avoiding direct reuse of source-human appearance.
+          </p>
+          <ul class="highlights-list">
+            <li>Side-by-side comparisons show stronger pose retention and photorealism than Mask-SD and DP2 baselines.</li>
+            <li>HumanGenAI shows especially strong generation for clear attributes such as ethnicity, clothing, occupation, and distinct emotions like happy or angry.</li>
+            <li>The hardest cases are subtle fine-grained translations, such as closely related ethnicities, older age transitions, and niche facial details.</li>
+            <li>Failure cases include attribute conflicts, partial occlusions, limb/context mismatches, and occasional body-proportion errors from limited avatar coverage.</li>
+          </ul>
+        </div>
+
+        <div class="results-placeholder">
+          <p><strong>ADD:</strong> Insert qualitative comparison grids and failure cases here.</p>
+          <p>Good candidates are the main comparison figure, extra RefSD examples, HumanGenAI examples, or the failure-case panel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{patwari2026refsd,
+  title     = {Privacy-Compliant Human Data Synthesis in Images for GDPR},
+  author    = {Patwari, Kartik and Schneider, David and Sun, Xiaoxiao and Chuah, Chen-Nee and Lyu, Lingjuan and Sharma, Vivek},
+  booktitle = {IEEE International Conference on Automatic Face and Gesture Recognition (FG)},
+  year      = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+            and adapted for the RefSD project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
