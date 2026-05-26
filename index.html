@@ -48,12 +48,12 @@
           <p class="subtitle is-4 hero-subtitle">with Rendering Refined Stable Diffusion (RefSD)</p>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Kartik Patwari<sup>*&dagger;1</sup>,</span>
-            <span class="author-block">David Schneider<sup>*&dagger;,2</sup>,</span>
-            <span class="author-block">Xiaoxiao Sun<sup>3</sup>,</span>
-            <span class="author-block">Chen-Nee Chuah<sup>1</sup>,</span>
-            <span class="author-block">Lingjuan Lyu<sup>4</sup>,</span>
-            <span class="author-block">Vivek Sharma<sup>*4</sup></span>
+            <span class="author-block"><a href="https://kartikp7.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Kartik Patwari</a><sup>*&dagger;1</sup>,</span>
+            <span class="author-block"><a href="https://dsch.ai/" class="author-link" target="_blank" rel="noopener noreferrer">David Schneider</a><sup>*&dagger;,2</sup>,</span>
+            <span class="author-block"><a href="https://xiaoxiaosun.com/" class="author-link" target="_blank" rel="noopener noreferrer">Xiaoxiao Sun</a><sup>3</sup>,</span>
+            <span class="author-block"><a href="https://www.ece.ucdavis.edu/~chuah/rubinet/people/chuah/bio.html" class="author-link" target="_blank" rel="noopener noreferrer">Chen-Nee Chuah</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://sites.google.com/view/lingjuan-lyu/home" class="author-link" target="_blank" rel="noopener noreferrer">Lingjuan Lyu</a><sup>4</sup>,</span>
+            <span class="author-block"><a href="https://vivoutlaw.github.io/" class="author-link" target="_blank" rel="noopener noreferrer">Vivek Sharma</a><sup>*4</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors publication-affiliations">
@@ -220,7 +220,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="humangenai-framework">
   <div class="container is-max-widescreen">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths paper-card">
@@ -256,12 +256,46 @@
             </ul>
           </div>
         </div>
+
+        <div class="results-subsection">
+          <h3 class="title is-4 has-text-centered">HumanGenAI Results</h3>
+          <p class="results-subsection-copy">
+            These plots summarize the HumanGenAI findings for facial fidelity, fine-grained attribute translation,
+            and generic human judgments over privacy, pose, and overall satisfaction.
+          </p>
+
+          <div class="figure-stack">
+            <figure class="result-figure">
+              <img src="images/humangenai_phib_results.png" alt="HumanGenAI facial attribute fidelity results" class="results-image" loading="lazy">
+              <figcaption>
+                <strong>&phi;B facial attribute fidelity.</strong> RefSD achieves the strongest facial attribute-following
+                scores across the 50 single-attribute prompts compared with SG-GAN, TriA-GAN, and Mask-SD.
+              </figcaption>
+            </figure>
+
+            <figure class="result-figure">
+              <img src="images/humangenai_phic_results.png" alt="HumanGenAI fine-grained attribute translation results" class="results-image" loading="lazy">
+              <figcaption>
+                <strong>&phi;C fine-grained translation.</strong> Human evaluators find ethnicity and emotion transfers
+                easiest, while age and nearby skin-tone or ethnicity pairs remain the hardest distinctions.
+              </figcaption>
+            </figure>
+
+            <figure class="result-figure">
+              <img src="images/humangenai_psi_results.png" alt="HumanGenAI generic property assurance results" class="results-image" loading="lazy">
+              <figcaption>
+                <strong>&psi; generic property assurance.</strong> RefSD leads on privacy, pose preservation, and user
+                satisfaction in both the face-focused and full-body HumanGenAI studies.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="quantitative-results">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -274,64 +308,104 @@
           </p>
         </div>
 
-        <div class="metric-grid">
-          <div class="metric-card">
-            <h3 class="title is-5">Human Evaluation</h3>
-            <p>
-              RefSD achieves <strong>4.5 / 4.6</strong> privacy, <strong>4.4 / 4.2</strong> pose, and
-              <strong>4.3 / 4.4</strong> satisfaction on face / full-body HumanGenAI &psi; evaluations,
-              outperforming SG-GAN, TriA-GAN, and Mask-SD.
-            </p>
-          </div>
-          <div class="metric-card">
-            <h3 class="title is-5">Privacy via Re-ID</h3>
-            <p>
-              On Market1501, RefSD reaches <strong>R@1 = 27.5</strong> and <strong>mAP = 23.9</strong>,
-              essentially matching the privacy gold standard of MaskOut (<strong>27.4</strong>, <strong>23.8</strong>)
-              while remaining more visually useful than pure masking.
-            </p>
-          </div>
-          <div class="metric-card">
-            <h3 class="title is-5">Utility for Training</h3>
-            <p>
-              RefSD synthetic data improves RAF-DB classification and OpenImages detection. The paper reports up to
-              <strong>+11.1%</strong> gender classification gain over real-only training, plus
-              <strong>+1.1 mAP@[.5:.95]</strong> and <strong>+1.0 mAP@0.5</strong> for detection over real-only data.
-            </p>
-          </div>
-        </div>
+        <div class="results-layout">
+          <figure class="result-figure privacy-result-figure">
+            <img src="images/table_reid.png" alt="Privacy person re-identification results" class="results-image" loading="lazy">
+            <figcaption>
+              <strong>Privacy via person re-identification.</strong> On Market-1501, RefSD nearly matches the privacy
+              of full masking while staying stronger than the prior synthesis baselines.
+            </figcaption>
+          </figure>
 
-        <div class="results-placeholder">
-          <p><strong>ADD:</strong> Insert your quantitative figure, table screenshots, or HTML tables here.</p>
-          <p>Good candidates are Table II, Table III, Table IV, or a custom summary panel of the privacy and utility numbers.</p>
+          <div class="results-split-grid">
+            <figure class="result-figure">
+              <img src="images/table_classification.png" alt="Utility classification results on RAF-DB" class="results-image" loading="lazy">
+              <figcaption>
+                <strong>Utility for classification.</strong> Pre-training with RefSD synthetic people and then fine-tuning
+                on real RAF-DB improves emotion and gender recognition over real-only training.
+              </figcaption>
+            </figure>
+
+            <figure class="result-figure">
+              <img src="images/table_detection.png" alt="Utility detection results on OpenImages" class="results-image" loading="lazy">
+              <figcaption>
+                <strong>Utility for detection.</strong> RefSD synthetic pre-training improves OpenImages detection,
+                yielding gains over both synthetic-only and real-only setups.
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
+<section class="section" id="qualitative-results">
+  <div class="container is-max-widescreen">
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            Qualitatively, the paper positions RefSD as a better trade-off than both masked inpainting and prior full-body
-            anonymization baselines: it keeps posture and scene alignment stronger than masking-only methods, and it looks
-            more natural than raw rendering while avoiding direct reuse of source-human appearance.
+        <div class="examples-panel">
+          <div class="examples-scroll-shell" aria-label="Scrollable qualitative comparison examples">
+            <div class="examples-scroll-content">
+              <div class="examples-header">
+                <span>Original</span>
+                <span><a href="https://arxiv.org/pdf/2112.10752" class="method-link" target="_blank" rel="noopener noreferrer">Mask-SD</a></span>
+                <span><a href="https://openaccess.thecvf.com/content/WACV2023/papers/Hukkelas_Realistic_Full-Body_Anonymization_With_Surface-Guided_GANs_WACV_2023_paper.pdf" class="method-link" target="_blank" rel="noopener noreferrer">DP2: SG-GAN</a></span>
+                <span><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Hukkelas_Synthesizing_Anyone_Anywhere_in_Any_Pose_WACV_2024_paper.pdf" class="method-link" target="_blank" rel="noopener noreferrer">DP2: TRiA-GAN</a></span>
+                <span>RefSD (Ours)</span>
+              </div>
+              <img src="images/more_examples2.jpg" alt="Scrollable qualitative comparisons across Original, Mask-SD, DP2 SG-GAN, DP2 TRiA-GAN, and RefSD" class="examples-image" loading="lazy">
+            </div>
+          </div>
+          <p class="examples-note">
+            Scroll through the panel to browse more side-by-side qualitative comparisons across all five methods.
           </p>
-          <ul class="highlights-list">
-            <li>Side-by-side comparisons show stronger pose retention and photorealism than Mask-SD and DP2 baselines.</li>
-            <li>HumanGenAI shows especially strong generation for clear attributes such as ethnicity, clothing, occupation, and distinct emotions like happy or angry.</li>
-            <li>The hardest cases are subtle fine-grained translations, such as closely related ethnicities, older age transitions, and niche facial details.</li>
-            <li>Failure cases include attribute conflicts, partial occlusions, limb/context mismatches, and occasional body-proportion errors from limited avatar coverage.</li>
-          </ul>
         </div>
 
-        <div class="results-placeholder">
-          <p><strong>ADD:</strong> Insert qualitative comparison grids and failure cases here.</p>
-          <p>Good candidates are the main comparison figure, extra RefSD examples, HumanGenAI examples, or the failure-case panel.</p>
+        <div class="examples-panel">
+          <div class="examples-scroll-shell" aria-label="Additional three-column qualitative comparison examples">
+            <div class="examples-scroll-content comparison-two-content">
+              <div class="examples-header examples-header-three">
+                <span>Original</span>
+                <span><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Hukkelas_Synthesizing_Anyone_Anywhere_in_Any_Pose_WACV_2024_paper.pdf" class="method-link" target="_blank" rel="noopener noreferrer">DP2: TRiA-GAN</a></span>
+                <span>RefSD (Ours)</span>
+              </div>
+              <img src="images/comparison2.png" alt="Three-column qualitative comparison across Original, DP2 TriA-GAN, and RefSD" class="examples-image comparison-two-image" loading="lazy">
+            </div>
+          </div>
+          <p class="examples-note">
+            Additional close-up comparisons across the original image, DP2: TRiA-GAN, and RefSD.
+          </p>
+        </div>
+
+        <div class="examples-panel">
+          <div class="comparison-scroll-shell" aria-label="Wide row-wise method comparison examples">
+            <div class="comparison-scroll-frame">
+              <div class="comparison-row-labels">
+                <span>Original</span>
+                <span><a href="https://arxiv.org/pdf/2112.10752" class="method-link" target="_blank" rel="noopener noreferrer">Mask-SD</a></span>
+                <span><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Hukkelas_Synthesizing_Anyone_Anywhere_in_Any_Pose_WACV_2024_paper.pdf" class="method-link" target="_blank" rel="noopener noreferrer">DP2: TRiA-GAN</a></span>
+                <span class="comparison-row-label-spacer"></span>
+                <span>RefSD (Ours)</span>
+              </div>
+              <div class="comparison-scroll-content">
+                <img src="images/comparison.png" alt="Wide row-wise qualitative comparison across Original, Mask-SD, DP2 TriA-GAN, zoomed crops, and RefSD" class="comparison-wide-image" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <p class="comparison-rows-note">
+            <strong>Rows:</strong> Original, <a href="https://arxiv.org/pdf/2112.10752" class="method-link" target="_blank" rel="noopener noreferrer">Mask-SD</a>,
+            <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Hukkelas_Synthesizing_Anyone_Anywhere_in_Any_Pose_WACV_2024_paper.pdf" class="method-link" target="_blank" rel="noopener noreferrer">DP2: TRiA-GAN</a>,
+            zoomed crops, and RefSD (Ours).
+          </p>
+        </div>
+
+        <div class="content has-text-centered qualitative-summary">
+          <p>
+            RefSD preserves pose and scene layout better than Mask-SD and DP2 while producing more natural-looking people.
+            The hardest remaining cases are subtle attribute edits, occlusions, and occasional body mismatches.
+          </p>
         </div>
       </div>
     </div>
